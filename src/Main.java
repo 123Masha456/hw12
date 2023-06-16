@@ -22,5 +22,13 @@ public class Main {
                 + sbornikStihov1.getPublicationYear() + " году, автор " +
                 sbornikStihov1.getAuthor().getName() + " " + sbornikStihov1.getAuthor().getSurname());
 
+        System.out.println(pushkin.toString());
+        System.out.println(esenin.toString());
+        System.out.println(pikovayaDama);
+        System.out.println(sbornikStihov1);
+
+        System.out.println(pushkin.equals(esenin));
+        System.out.println(pikovayaDama.equals(sbornikStihov1));
+
     }
 }
