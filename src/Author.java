@@ -28,7 +28,7 @@ public class Author {
             return false;
 
         if (o == this)
-            return false;
+            return true;
 
         Author author = (Author) o;
         return name.equals(author.getName()) && surname.equals(author.getSurname());

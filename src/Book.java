@@ -41,7 +41,7 @@ public class Book {
             return false;
 
         if (o == this)
-            return false;
+            return true;
 
         Book book = (Book) o;
         return nameOfBook.equals(book.getNameOfBook()) && author.equals(book.getAuthor) &&
