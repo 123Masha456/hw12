@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Book {
     private String nameOfBook;
     private Author author;
@@ -46,12 +48,8 @@ public class Book {
                 (publicationYear == (book.getPublicationYear()));
     }
 
-
+    @Override
     public int hashCode() {
-        return Book.hash(nameOfBook, author, publicationYear);
-    }
-
-    private static int hash(String nameOfBook, Author author, int publicationYear) {
-        return Book.hash(nameOfBook, author, publicationYear);
+        return Objects.hash(nameOfBook, author, publicationYear);
     }
 }
